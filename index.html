@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/tooltipster.css">
   <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/themes/tooltipster-shadow.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -31,22 +32,36 @@
   <!-- Scripts -->
   <script src="jquery-2.1.4.min.js"></script>
   <script src="js/jquery.tooltipster.min.js"></script>
+ 
   <script>
           $(document).ready(function() {
               $('.tooltip').tooltipster();
+              
+              $('.tooltip-right').tooltipster({
+                  position: 'right',
+                  trigger: 'click',
+                  theme: 'tooltipster-custom',
+                  animation: 'grow',
+                  content: $('<span><img src="images/favicon.png" /></span>')
+              });
           });
   </script>
 
 </head>
 <body>
 
+    <div class="header">
+        <h1>The Digital Wasteland</h1>
+    </div>
+
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row">
       <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a <a href=# title="blah" class="tooltip">placeholder</a> with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+        <h4>Tooltipster Demo</h4>
+          <p>This is the <span title="blah" class="tooltip">basic</span> tooltip.</p>
+          <p>Add an <a href=# class="tooltip-right">image</a></p>
       </div>
     </div>
   </div>

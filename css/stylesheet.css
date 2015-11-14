@@ -1,0 +1,24 @@
+@font-face {
+    font-family: digital;
+    src: url('/fonts/DS-DIGI.ttf');
+}
+
+body {
+    background: black;
+}
+
+.header{
+    height: 400px;
+    padding: 50px;
+    text-align: center;
+    background-image: url('/images/desert2.jpg');
+    background-size: cover;
+    background-position: -0px -250px;
+}
+
+.header h1{
+    line-height: 400px;
+    font-size: 100px;
+    font-family: digital;
+}
+
