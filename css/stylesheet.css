@@ -8,15 +8,15 @@ body {
 }
 
 .header{
-    height: 30%;
+    height: auto;
     text-align: center;
     background-image: url('/images/desert2.jpg');
     background-size: cover;
     width: 100% auto;
 }
 
-.header h1{
-    line-height: 300px;
+.header-text{
     font-family: digital;
+    padding: 10%;
 }
 
