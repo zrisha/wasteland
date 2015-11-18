@@ -18,16 +18,16 @@
 
 /* Custom themes */
 
-.tooltipster-custom {
+.tooltipster-foreign {
 	border-radius: 5px; 
 	border: 2px solid #000;
 	background: red;
 	color: #fff;
 }
 
-.tooltipster-custom .tooltipster-content {
+.tooltipster-foreign .tooltipster-content {
 	font-family: Raleway;
-	font-size: 10px;
+	font-size: 12px;
 	line-height: 14px;
 	padding: 8px 10px;
 	overflow: hidden;

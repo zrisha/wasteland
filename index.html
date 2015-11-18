@@ -37,11 +37,16 @@
           $(document).ready(function() {
               $('.tooltip').tooltipster();
               
+              $('.tooltip-foreign').tooltipster({
+                  position: 'right',
+                  theme: 'tooltipster-foreign'
+              });
+              
               $('.tooltip-tristan').tooltipster({
                   position: 'right',
-                  theme: 'tooltipster-custom',
+                  theme: 'tooltipster-foreign',
                   animation: 'grow',
-                  content: $('<span style="font-size: 20px">"Fresh blows the wind<br>To the homeland<br>My Irish child,<br>Where are you tarrying?"</span>')
+                  content: $('<span style="font-size: 14px">"Fresh blows the wind<br>To the homeland<br>My Irish child,<br>Where are you tarrying?"</span>')
               });
           });
   </script>
@@ -80,7 +85,7 @@
                         <tr><td>With a shower of rain; we stopped in the colonnade,</td></tr>
                         <tr><td>And went on in sunlight, into the Hofgarten,</td></tr>
                         <tr><td>And drank coffee, and talked for an hour.</td></tr>
-                        <tr><td>Bin gar keine Russin, stamm’ aus Litauen, echt deutsch.</td></tr>
+                        <tr><td><span class="tooltip-foreign" title="I am not a Russian, I come from Lithuania, a real German"><i>Bin gar keine Russin, stamm’ aus Litauen, echt deutsch.</i></span></td></tr>
                         <tr><td>And when we were children, staying at the arch-duke’s,</td></tr>
                         <tr><td>My cousin’s, he took me out on a sled,</td></tr>
                         <tr><td>And I was frightened. He said, Marie,</td></tr>
