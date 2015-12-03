@@ -54,6 +54,12 @@ table tr td{
     border: none;
 }
 
+/* Larger than mobile */
+@media (min-width: 300px) {
+        .text{
+        font-family: sans-serif;
+        }
+}
 
 /* Larger than tablet */
 @media (min-width: 550px) {
@@ -61,6 +67,9 @@ table tr td{
         font-size: 4rem;
         font-weight: bold;
 }
+        .text{
+            font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
 }
 
 /* Larger than tablet */
@@ -69,6 +78,9 @@ table tr td{
         font-size: 6.4rem;
         font-weight: bold;
 }
+        .text{
+            font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
 }
 
 /* Larger than tablet */
@@ -77,6 +89,9 @@ table tr td{
         font-size: 8rem;
         font-weight: bold;
 }
+        .text{
+            font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
 }
 
 
