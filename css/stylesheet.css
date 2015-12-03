@@ -54,7 +54,7 @@ table tr td{
 }
 
 /* Larger than mobile */
-@media (max-width: 400px) {
+@media (max-width: 500px) {
         .text{
         font-family: sans-serif;
         margin: 5% 0 0 0;
