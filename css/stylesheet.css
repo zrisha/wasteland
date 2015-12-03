@@ -25,6 +25,7 @@ body {
 .text{
     margin-top: 5%;
     white-space: nowrap;
+    overflow: scroll;
 }
 
 /* Navbar */
