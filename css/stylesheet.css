@@ -25,7 +25,6 @@ body {
 .text{
     margin-top: 5%;
     white-space: nowrap;
-    overflow: scroll;
 }
 
 /* Navbar */
@@ -55,9 +54,12 @@ table tr td{
 }
 
 /* Larger than mobile */
-@media (min-width: 300px) {
+@media (max-width: 400px) {
         .text{
         font-family: sans-serif;
+        margin: 5% 0 0 0;
+        padding: none;
+        overflow: scroll;
         }
 }
 
@@ -67,9 +69,6 @@ table tr td{
         font-size: 4rem;
         font-weight: bold;
 }
-        .text{
-            font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        }
 }
 
 /* Larger than tablet */
@@ -78,9 +77,6 @@ table tr td{
         font-size: 6.4rem;
         font-weight: bold;
 }
-        .text{
-            font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        }
 }
 
 /* Larger than tablet */
@@ -89,9 +85,6 @@ table tr td{
         font-size: 8rem;
         font-weight: bold;
 }
-        .text{
-            font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        }
 }
 
 
