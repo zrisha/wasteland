@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>About</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/tooltipster.css">
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" href="css/themes/tooltipster-shadow.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  
+  <!-- Scripts -->
+  <script src="jquery-2.1.4.min.js"></script>
+  <script src="js/jquery.tooltipster.min.js"></script>
+ 
+  <script>
+          $(document).ready(function() {
+              $('.tooltip').tooltipster();
+              
+              $('.tooltip-foreign').tooltipster({
+                  position: 'bottom',
+                  theme: 'tooltipster-foreign'
+              });
+              
+              $('.tooltip-tristan').tooltipster({
+                  position: 'right',
+                  theme: 'tooltipster-foreign',
+                  animation: 'grow',
+                  content: $('<span style="font-size: 14px">"Fresh blows the wind<br>To the homeland<br>My Irish child,<br>Where are you tarrying?"</span>')
+              });
+          });
+  </script>
+
+</head>
+    
+<body>
+    <div class="header">
+        <div class="header-text">
+            <h1>The Digital Waste Land</h1>
+        </div>
+    </div>
+
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="navbar">
+        <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li>About</li>
+        </ul>
+            
+    </div>
+    <div class="text">
+        <div class="container">
+            <div class="row">
+                <div class="two columns">
+                    <p> </p>
+                </div>
+                <div class="eight columns">
+                    <h4>About</h4>
+                    <p>The Waste Land is one of the most difficult to read poems. There are numerous reasons beyond the countless references, amibguous language, and multiple voices. Eliot has definitely made a challenge for the average reader, thus this website is an attempt to make the poem easier to read by incomportating interactive footnotes, just hover over the text!.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

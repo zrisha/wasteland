@@ -6,6 +6,7 @@
 body {
 }
 
+
 /*--Header--*/
 
 .header{
@@ -24,7 +25,6 @@ body {
 
 .text{
     margin-top: 5%;
-    white-space: nowrap;
 }
 
 /* Navbar */
@@ -32,7 +32,6 @@ body {
 .navbar{
     width: 100%;
     position: absolute;
-    padding-top: .5%;
     top: 0%;
     background: black;
     opacity: 0.5;
@@ -41,16 +40,46 @@ body {
 
 ul{
     margin: 0px;
-    padding: 10px .5% .5% 5%; 
+    padding: 10px .5% 10px 3%; 
 }
 
 li{
     list-style: none;
+    display:inline;
+    padding-left: 5%;
 }
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+a:hover{
+    color:sandybrown; 
+}
+
+/* Table */
 
 table tr td{
     padding: 0px;
     border: none;
+}
+
+.line{
+    position:sticky
+}
+
+/* Tooltips */
+
+.tt-foreign, .tt-tristan{
+    color: red;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.tt-eliot{
+    color: rgb(0, 110, 0);
+    font-weight: 900;
 }
 
 /* Larger than mobile */
@@ -61,6 +90,10 @@ table tr td{
         
         .container{
         margin: .8em;
+        }
+        
+        .line{
+        display: none;
         }
 
 }

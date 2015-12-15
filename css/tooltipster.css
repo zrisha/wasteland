@@ -18,14 +18,16 @@
 
 /* Custom themes */
 
-.tooltipster-foreign {
+/* Foreign */
+
+.tooltip-foreign {
 	border-radius: 5px; 
 	border: 2px solid #000;
 	background: red;
 	color: #fff;
 }
 
-.tooltipster-foreign .tooltipster-content {
+.tooltip-foreign .tooltipster-content {
 	font-family: Raleway;
 	font-size: 12px;
 	line-height: 14px;
@@ -33,6 +35,26 @@
 	overflow: hidden;
 }
 
+/* Eliot */
+
+.tooltip-eliot {
+	border-radius: 5px; 
+	border: 2px solid #000;
+	background: rgb(0, 77, 48);
+	color: #fff;
+    max-width: 500px;
+}
+
+.tooltip-eliot .tooltipster-content {
+	font-family: Raleway;
+	font-size: 12px;
+	line-height: 14px;
+	padding: 8px 10px;
+	overflow: hidden;
+}
+
+
+/* Inherent themes */
 .tooltipster-light {
 	border-radius: 5px; 
 	border: 1px solid #cccccc;

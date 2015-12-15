@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Your page title here :)</title>
+  <title>The Digital Waste Land</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -33,20 +33,28 @@
   <script src="jquery-2.1.4.min.js"></script>
   <script src="js/jquery.tooltipster.min.js"></script>
  
+<!-- &lt;br&gt;  &lt;br&gt; -->
+    
   <script>
           $(document).ready(function() {
               $('.tooltip').tooltipster();
               
-              $('.tooltip-foreign').tooltipster({
+              $('.tt-foreign').tooltipster({
                   position: 'bottom',
-                  theme: 'tooltipster-foreign'
+                  theme: 'tooltip-foreign'
               });
               
-              $('.tooltip-tristan').tooltipster({
+              $('.tt-eliot').tooltipster({
+                  position: 'bottom',
+                  theme: 'tooltip-eliot',
+                  contentAsHTML: true
+              });
+              
+              $('.tt-tristan').tooltipster({
                   position: 'right',
-                  theme: 'tooltipster-foreign',
+                  theme: 'tooltip-foreign',
                   animation: 'grow',
-                  content: $('<span style="font-size: 14px">"Fresh blows the wind<br>To the homeland<br>My Irish child,<br>Where are you tarrying?"</span>')
+                  content: $('<span style="font-size: 14px">"Fresh blows the wind<br>To the homeland<br>My Irish child,<br>Where are you tarrying?<br>(Tristan und Isolde I, v. 5-8)"</span>')
               });
           });
   </script>
@@ -66,10 +74,11 @@
     <div class="navbar">
         <ul>
             <li>Home</li>
+            <li><a href="about.html">About</a></li>
         </ul>
             
     </div>
-    <div class="text">
+    <div style="white-space: nowrap" class="text">
         <div class="container">
             <div class="row">
                 <div class="two columns">
@@ -80,71 +89,71 @@
                     <p>I. THE BURIAL OF THE DEAD</p>
                     
                     <table>
-                        <tr><td>April is the cruellest month, breeding</td></tr>
+                        <tr><td style="width: 31em">April is the cruellest month, breeding</td></tr>
                         <tr><td>Lilacs out of the dead land, mixing</td></tr>
                         <tr><td>Memory and desire, stirring</td></tr>
                         <tr><td>Dull roots with spring rain.</td></tr>
-                        <tr><td>Winter kept us warm, covering</td></tr>
+                        <tr><td>Winter kept us warm, covering</td><td class="line">5</td></tr>
                         <tr><td>Earth in forgetful snow, feeding</td></tr>
                         <tr><td>A little life with dried tubers.</td></tr>
                         <tr><td>Summer surprised us, coming over the Starnbergersee</td></tr>
                         <tr><td>With a shower of rain; we stopped in the colonnade,</td></tr>
-                        <tr><td>And went on in sunlight, into the Hofgarten,</td></tr>
+                        <tr><td>And went on in sunlight, into the Hofgarten,</td><td class="line">10</td></tr>
                         <tr><td>And drank coffee, and talked for an hour.</td></tr>
-                        <tr><td><span class="tooltip-foreign" title="I am not a Russian, I come from Lithuania, a real German" style="color: red"><i>Bin gar keine Russin, stamm’ aus Litauen, echt deutsch.</i></span></td></tr>
+                        <tr><td><span class="tt-foreign" title="I am not a Russian, I come from Lithuania, a real German">Bin gar keine Russin, stamm’ aus Litauen, echt deutsch.</span></td></tr>
                         <tr><td>And when we were children, staying at the arch-duke’s,</td></tr>
                         <tr><td>My cousin’s, he took me out on a sled,</td></tr>
-                        <tr><td>And I was frightened. He said, Marie,</td></tr>
+                        <tr><td>And I was frightened. He said, Marie,</td><td class="line">15</td></tr>
                         <tr><td>Marie, hold on tight. And down we went.</td></tr>
                         <tr><td>In the mountains, there you feel free.</td></tr>
                         <tr><td>I read, much of the night, and go south in the winter.</td></tr>
                     </table>
                     
                     <table style="margin-bottom: 0px">
-                        <tr><td>What are the roots that clutch, what branches grow</td></tr>
-                        <tr><td>Out of this stony rubbish? Son of man,</td></tr>
+                        <tr><td style="width: 31em">What are the roots that clutch, what branches grow</td></tr>
+                        <tr><td><span class="tt-eliot" title="And he said unto me, Son of man, stand upon thy feet, and I will speak unto thee (Ezekiel 2:1)">Out of this stony rubbish? Son of man,</span></td><td class="line">20</td></tr>
                         <tr><td>You cannot say, or guess, for you know only</td></tr>
                         <tr><td>A heap of broken images, where the sun beats,</td></tr>
-                        <tr><td>And the dead tree gives no shelter, the cricket no relief,</td></tr>
+                        <tr><td><span class="tt-eliot" title="Also when they shall be afraid of that which is high, and fears shall be in the way, and the almond tree shall flourish, and the grasshopper shall be a burden, and desire shall fail: because man goeth to his long home, and the mourners go about the streets (Ecclesiastes 12:5)">And the dead tree gives no shelter, the cricket no relief,</td></tr>
                         <tr><td>And the dry stone no sound of water. Only</td></tr>
-                        <tr><td>There is shadow under this red rock,</td></tr>
+                        <tr><td>There is shadow under this red rock,</td><td class="line">25</td></tr>
                         <tr><td>(Come in under the shadow of this red rock),</td></tr>
                         <tr><td>And I will show you something different from either</td></tr>
                         <tr><td>Your shadow at morning striding behind you</td></tr>
                         <tr><td>Or your shadow at evening rising to meet you;</td></tr>
-                        <tr><td>I will show you fear in a handful of dust.</td></tr>
+                        <tr><td>I will show you fear in a handful of dust.</td><td class="line">30</td></tr>
                     </table>
-                    <table class="tooltip-tristan" style="margin: 0px; color: red">
-                        <tr><td><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Frisch weht der Wind</i></td></tr>
-                        <tr><td><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Der Heimat zu</i></td></tr>
-                        <tr><td><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mein Irisch Kind,</i></td></tr>
-                        <tr><td><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wo weilest du?</i></span></td></tr>
+                    <table class="tt-tristan" style="margin: 0px; color: red; font-style: italic">
+                        <tr><td style="padding-left: 2em">Frisch weht der Wind</td></tr>
+                        <tr><td style="padding-left: 2em">Der Heimat zu</td></tr>
+                        <tr><td style="padding-left: 2em">Mein Irisch Kind,</td></tr>
+                        <tr><td style="padding-left: 2em">Wo weilest du?</span></td></tr>
                     </table>
                     <table>
-                        <tr><td>“You gave me hyacinths first a year ago;</td></tr>
+                        <tr><td style="width: 31em">“You gave me hyacinths first a year ago;</td><td class="line">35</td></tr>
                         <tr><td>“They called me the hyacinth girl.”</td></tr>
                         <tr><td>—Yet when we came back, late, from the Hyacinth garden,</td></tr>
                         <tr><td>Your arms full, and your hair wet, I could not</td></tr>
                         <tr><td>Speak, and my eyes failed, I was neither</td></tr>
-                        <tr><td>Living nor dead, and I knew nothing,</td></tr>
+                        <tr><td>Living nor dead, and I knew nothing,</td><td class="line">40</td></tr>
                         <tr><td>Looking into the heart of light, the silence.</td></tr>
-                        <tr><td><span class="tooltip-foreign" title="Desolate and empty the sea." style="color: red"><i>Oed’ und leer das Meer.</i></span></td></tr>
+                        <tr><td><span class="tt-foreign" title="Desolate and empty the sea (Tristan und Isolde III v. 24)">Oed’ und leer das Meer.</span></td></tr>
                     </table>
                     
                     <table>
-                        <tr><td>Madame Sosostris, famous clairvoyante,</td></tr>
+                        <tr><td style="width: 31em">Madame Sosostris, famous clairvoyante,</td></tr>
                         <tr><td>Had a bad cold, nevertheless</td></tr>
-                        <tr><td>Is known to be the wisest woman in Europe,</td></tr>
-                        <tr><td>With a wicked pack of cards. Here, said she,</td></tr>
+                        <tr><td>Is known to be the wisest woman in Europe,</td><td class="line">45</td></tr>
+                        <tr><td><span class="tt-eliot" title="(Eliot commentary on Tarot pack of cards)">With a wicked pack of cards. Here, said she,</span></td></tr>
                         <tr><td>Is your card, the drowned Phoenician Sailor,</td></tr>
                         <tr><td>(Those are pearls that were his eyes. Look!)</td></tr>
                         <tr><td>Here is Belladonna, the Lady of the Rocks,</td></tr>
-                        <tr><td>The lady of situations.</td></tr>
+                        <tr><td>The lady of situations.</td><td class="line">50</td></tr>
                         <tr><td>Here is the man with three staves, and here the Wheel,</td></tr>
                         <tr><td>And here is the one-eyed merchant, and this card,</td></tr>
                         <tr><td>Which is blank, is something he carries on his back,</td></tr>
                         <tr><td>Which I am forbidden to see. I do not find</td></tr>
-                        <tr><td>The Hanged Man. Fear death by water.</td></tr>
+                        <tr><td>The Hanged Man. Fear death by water.</td><td class="line">55</td></tr>
                         <tr><td>I see crowds of people, walking round in a ring.</td></tr>
                         <tr><td>Thank you. If you see dear Mrs. Equitone,</td></tr>
                         <tr><td>Tell her I bring the horoscope myself:</td></tr>
@@ -152,23 +161,23 @@
                     </table>
                     
                     <table>
-                        <tr><td>Unreal City,</td></tr>
+                        <tr><td style="width: 31em"><span class="tt-eliot" title="City swarming with people! City Crowded with dreams! &lt;br&gt; Through the narrow back streets of this mighty colossus (Baudelaire).">Unreal City,</span></td><td class="line">60</td></tr>
                         <tr><td>Under the brown fog of a winter dawn,</td></tr>
                         <tr><td>A crowd flowed over London Bridge, so many,</td></tr>
-                        <tr><td>I had not thought death had undone so many.</td></tr>
-                        <tr><td>Sighs, short and infrequent, were exhaled,</td></tr>
-                        <tr><td>And each man fixed his eyes before his feet.</td></tr>
+                        <tr><td><span class="tt-eliot" title="such a long stream &lt;br&gt; of people, that I would not have thought &lt;br&gt; that death had undone so many. &lt;br&gt; (Dante Inferno III, 55-57).">I had not thought death had undone so many.</span></td></tr>
+                        <tr><td><span class="tt-eliot" title="Here, as far I could tell by listening, &lt;br&gt; Was no lamentation more than sighs, &lt;br&gt; Which kept the air forever trembling. &lt;br&gt; (Dante Inferno IV, 25-27).">Sighs, short and infrequent, were exhaled,</span></td></tr>
+                        <tr><td>And each man fixed his eyes before his feet.</td><td class="line">65</td></tr>
                         <tr><td>Flowed up the hill and down King William Street,</td></tr>
                         <tr><td>To where Saint Mary Woolnoth kept the hours</td></tr>
-                        <tr><td>With a dead sound on the final stroke of nine.</td></tr>
+                        <tr><td><span class="tt-eliot" title="A phenomenon which I have often noticed">With a dead sound on the final stroke of nine.</span></td></tr>
                         <tr><td>There I saw one I knew, and stopped him, crying: “Stetson!</td></tr>
-                        <tr><td>“You who were with me in the ships at Mylae!</td></tr>
+                        <tr><td>“You who were with me in the ships at Mylae!</td><td class="line">70</td></tr>
                         <tr><td>“That corpse you planted last year in your garden,</td></tr>
                         <tr><td>“Has it begun to sprout? Will it bloom this year?</td></tr>
                         <tr><td>“Or has the sudden frost disturbed its bed?</td></tr>
-                        <tr><td>“Oh keep the Dog far hence, that’s friend to men,</td></tr>
-                        <tr><td>“Or with his nails he’ll dig it up again!</td></tr>
-                        <tr><td>"You! <span class="tooltip-foreign" title="Hypocrite reader!—My twin!—My brother!"><i>hypocrite lecteur!—mon semblable,—mon frère!”</i></span></td></tr>
+                        <tr><td><span class="tt-eliot" title="The Dirge in Webster's White Devil. &lt;br&gt; (Eliot notes a song from the play White Devil which dramatizing political and sexual betrayal, such as Flamineo murdering his own brother Marcello. The mother then sings a demented dirge over Marcello's body">“Oh keep the Dog far hence, that’s friend to men,</span></td></tr>
+                        <tr><td>“Or with his nails he’ll dig it up again!</td><td class="line">75</td></tr>
+                        <tr><td>"You! <span class="tt-foreign" title="Hypocrite reader!—My twin!—My brother! (Baudelaire, Preface to Fleurs du Mal)">hypocrite lecteur!—mon semblable,—mon frère!”</span></td></tr>
                     </table>
                 </div>
             </div>
@@ -177,113 +186,417 @@
                     <p> </p>
                 </div>
                 <div class="eight columns">
-                    <p>II. A Game of Chess</p>
+                    <p>II. A GAME OF CHESS</p>
                     <table>
-                        <tr><td>The Chair she sat in, like a burnished throne,</td></tr>
+                        <tr><td style="width: 31em"><span class="tt-eliot" title="Eliot cites Shakespeare's Anthony and Cleopatra II.ii.190. Enobarbus, a follower of Marc Antony, decribes Cleopatra floating on her ship to Anthony. &lt;br&gt; &lt;br&gt; The barge she sat in, like a burnished throne, &lt;br&gt; Burned on the water: the poop was beaten gold; &lt;br&gt; Purple the sails, and so perfumèd that &lt;br&gt; The winds were lovesick with them; the oars were silver"> The Chair she sat in, like a burnished throne,</span></td></tr>
                         <tr><td>Glowed on the marble, where the glass</td></tr>
                         <tr><td>Held up by standards wrought with fruited vines</td></tr>
-                        <tr><td>From which a golden Cupidon peeped out</td></tr>
+                        <tr><td>From which a golden Cupidon peeped out</td><td class="line">80</td></tr>
                         <tr><td>(Another hid his eyes behind his wing)</td></tr>
                         <tr><td>Doubled the flames of sevenbranched candelabra</td></tr>
                         <tr><td>Reflecting light upon the table as</td></tr>
                         <tr><td>The glitter of her jewels rose to meet it,</td></tr>
-                        <tr><td>From satin cases poured in rich profusion;</td></tr>
+                        <tr><td>From satin cases poured in rich profusion;</td><td class="line">85</td></tr>
                         <tr><td>In vials of ivory and coloured glass</td></tr>
                         <tr><td>Unstoppered, lurked her strange synthetic perfumes,</td></tr>
                         <tr><td>Unguent, powdered, or liquid—troubled, confused</td></tr>
                         <tr><td>And drowned the sense in odours; stirred by the air</td></tr>
-                        <tr><td>That freshened from the window, these ascended</td></tr>
+                        <tr><td>That freshened from the window, these ascended</td><td class="line">90</td></tr>
                         <tr><td>In fattening the prolonged candle-flames,</td></tr>
-                        <tr><td>Flung their smoke into the laquearia,</td></tr>
+                        <tr><td><span class="tt-eliot" title="Blazing torches hang down from the gilded ceiling, &lt;br&gt; And vanquish the night with their flames (Aeneid I, 726-727). &lt;br&gt; &lt;br&gt; [laquearia]: Latin term for a paneled or fretted ceiling. Eliot refers to Virgil, the Aeneid: Aenas and his crew have just arrived in Carthage. Dido, The queen of Carthage, has given them a royal wlecome, serving them a luxrious dinner. The gods have fated her to fall in love with Aeneas at the meal, ensuring she provides him needed aid to fufill his destiny—the foundation of Rome. To do this he must desert her, prompting her suicide. Ironically, the reader knows Rome will eventually destroy Carthage.">Flung their smoke into the laquearia,</span></td></tr>
                         <tr><td>Stirring the pattern on the coffered ceiling.</td></tr>
                         <tr><td>Huge sea-wood fed with copper</td></tr>
-                        <tr><td>Burned green and orange, framed by the coloured stone,</td></tr>
+                        <tr><td>Burned green and orange, framed by the coloured stone,</td><td class="line">95</td></tr>
                         <tr><td>In which sad light a carvéd dolphin swam.</td></tr>
                         <tr><td>Above the antique mantel was displayed</td></tr>
-                        <tr><td>As though a window gave upon the sylvan scene</td></tr>
-                        <tr><td>The change of Philomel, by the barbarous king</td></tr>
-                        <tr><td>So rudely forced; yet there the nightingale</td></tr>
+                        <tr><td> <span class="tt-eliot" title="A Silvan Scene, a woody Theatre(Paradise Lost IV, 140) &lt;br&gt; Eliot references a passage from Milton that describes Satan as he approaches paradise, where he will tempt Eve.">As though a window gave upon the sylvan scene</td></tr>
+                        <tr><td><span class="tt-eliot" title="Eliot cites the character Philomela from Ovid's Metamorphoses VI, 424-674. &lt;br&gt; King Tereus marries Procne, princess of Athens. However, upon seeing Philomela, his newly wed wife's sister, Tereus lusts after her, eventually taking her into his care to rape her. Philomela, pleading for death, instead has her tongue cut out by Tereus as he continues raping her. Held captive, Philomela weaves a message onto cloth, informing her sister of the crime. For revenge, Procne and Philomela kill Tereus’s son and feed the child to the king. Tereus chases them in rage, but the gods change Philomela into a nightingale, Procne into a swallow, and Tereus into a hawk.">The change of Philomel, by the barbarous king</span></td></tr>
+                        <tr><td><span class="tt-eliot" title="Compare this to line 204 of the poem">So rudely forced; yet there the nightingale</span></td><td class="line">100</td></tr>
                         <tr><td>Filled all the desert with inviolable voice</td></tr>
                         <tr><td>And still she cried, and still the world pursues,</td></tr>
                         <tr><td>“Jug Jug” to dirty ears.</td></tr>
                         <tr><td>And other withered stumps of time</td></tr>
-                        <tr><td>Were told upon the walls; staring forms</td></tr>
+                        <tr><td>Were told upon the walls; staring forms</td><td class="line">105</td></tr>
                         <tr><td>Leaned out, leaning, hushing the room enclosed.</td></tr>
                         <tr><td>Footsteps shuffled on the stair.</td></tr>
                         <tr><td>Under the firelight, under the brush, her hair</td></tr>
                         <tr><td>Spread out in fiery points</td></tr>
-                        <tr><td>Glowed into words, then would be savagely still.</td></tr>
+                        <tr><td>Glowed into words, then would be savagely still.</td><td class="line">110</td></tr>
                     </table>
                     <table>
-                        <tr><td>  “My nerves are bad tonight. Yes, bad. Stay with me.</td></tr>
+                        <tr><td style="width: 31em"> “My nerves are bad tonight. Yes, bad. Stay with me.</td></tr>
                         <tr><td>“Speak to me. Why do you never speak. Speak.</td></tr>
-                        <tr><td>  “What are you thinking of? What thinking? What?</td></tr>
+                        <tr><td>“What are you thinking of? What thinking? What?</td></tr>
                         <tr><td>“I never know what you are thinking. Think.”</td></tr>
-                        <tr><td></td></tr>
-                        <tr><td>  I think we are in rats’ alley</td></tr>
+                        <tr><td>&nbsp;</td></tr>
+                        <tr><td> <span class="tt-eliot" title="Compare this to line 195 of the poem">I think we are in rats’ alley</span></td><td class="line">115</td></tr>
                         <tr><td>Where the dead men lost their bones.</td></tr>
-                        <tr><td></td></tr>
+                        <tr><td>&nbsp;</td></tr>
                         <tr><td>“What is that noise?”</td></tr>
-                        <tr><td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The wind under the door.</td></tr>
-                        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“What is that noise now? What is the wind doing?”</td></tr>
-                        <tr><td> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nothing again nothing.</td></tr>
-                        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“Do</td></tr>
+                        <tr><td style="padding-left: 9em"><span class="tt-eliot" title="Cf. Webster: 'Is the wind in that door still?' &lt;br&gt; Eliot refers to Webster's play The Devil's Law Case. Contarino has been stabbed, and while undergoing treatment at the hands of two surgeons is stabbed again by villian Romelio. The surgeons had left the room and are unaware of the act, returning thinking Contarino dead. Yet, the patient groans and one surgeon asks the other, 'Is the wind in that door still?'">The wind under the door.</span></td></tr>
+                        <tr><td>“What is that noise now? What is the wind doing?”</td></tr>
+                        <tr><td style="padding-left: 9.1em">Nothing again nothing.</td><td class="line">120</td></tr>
+                        <tr><td style="padding-left: 15em">“Do</td></tr>
                         <tr><td>“You know nothing? Do you see nothing? Do you remember</td></tr>
                         <tr><td>“Nothing?”</td></tr>
+                        <tr><td style="padding-left: 5em">I remember</td></tr>
+                        <tr><td style="padding-left: 10em">Those are pearls that were his eyes.</td><td class="line">125</td></tr>
+                        <tr><td><span class="tt-eliot" title="Cf. Part I, l. 37, 48. &lt;br&gt; Compare with line 37 and 48 &lt;br&gt; Line 37: —Yet when we came back, late, from the Hyacinth garden, &lt;br&gt; Line 48: (Those are pearls that were his eyes. Look!)"> "Are you alive, or not? Is there nothing in your head?”</span></td></tr>   
                         <tr><td></td></tr>
-                        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I remember</td></tr>
-                        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Those are pearls that were his eyes.</td></tr>
-                        <tr><td>“Are you alive, or not? Is there nothing in your head?”</td></tr>   
-                        <tr><td></td></tr>
-                        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;But</td></tr>
+                        <tr><td style="padding-left: 15em">But</td></tr>
                         <tr><td>O O O O that Shakespeherian Rag—</td></tr>
                         <tr><td>It’s so elegant</td></tr>
-                        <tr><td>So intelligent</td></tr>
+                        <tr><td>So intelligent</td><td class="line">130</td></tr>
+                        <tr><td>&nbsp;<tr><td>
                         <tr><td>“What shall I do now? What shall I do?”</td></tr>
                         <tr><td>“I shall rush out as I am, and walk the street</td></tr>
                         <tr><td>“With my hair down, so. What shall we do tomorrow?</td></tr>
                         <tr><td>“What shall we ever do?”</td></tr>
-                        <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The hot water at ten.</td></tr>
+                        <tr><td style="padding-left: 9em">The hot water at ten.</td><td class="line">135</td></tr>
                         <tr><td>And if it rains, a closed car at four.</td></tr>
                         <tr><td>And we shall play a game of chess,</td></tr>
-                        <tr><td>Pressing lidless eyes and waiting for a knock upon the door.</td></tr>
+                        <tr><td><span class="tt-eliot" title="Cf. the game of chess in Middleton's Women Beware Women. &lt;br&gt; In Thomas Middleton's play Women Beware Women a woman, Bianca, is seduced by the Duke of Florence in one room while in another room a game of chess between Livia and Bianca's mother-in-law has moves paralleling the steps in the seduction.">Pressing lidless eyes and waiting for a knock upon the door.</span></td></tr>
                     </table>
                     <table>
-                        <tr><td> When Lil’s husband got demobbed, I said—</td></tr>
-                        <tr><td>I didn’t mince my words, I said to her myself,</td></tr>
-                        <tr><td>HURRY UP PLEASE ITS TIME</td></tr>
+                        <tr><td style="width: 31em">When Lil’s husband got demobbed, I said—</td></tr>
+                        <tr><td>I didn’t mince my words, I said to her myself,</td><td class="line">140</td></tr>
+                        <tr><td style="font-variant: small-caps;">hurry up please it's time</td></tr>
                         <tr><td>Now Albert’s coming back, make yourself a bit smart.</td></tr>
                         <tr><td>He’ll want to know what you done with that money he gave you</td></tr>
                         <tr><td>To get yourself some teeth. He did, I was there.</td></tr>
-                        <tr><td>You have them all out, Lil, and get a nice set,</td></tr>
+                        <tr><td>You have them all out, Lil, and get a nice set,</td><td class="line">145</td></tr>
                         <tr><td>He said, I swear, I can’t bear to look at you.</td></tr>
                         <tr><td>And no more can’t I, I said, and think of poor Albert,</td></tr>
                         <tr><td>He’s been in the army four years, he wants a good time,</td></tr>
                         <tr><td>And if you don’t give it him, there’s others will, I said.</td></tr>
-                        <tr><td>Oh is there, she said. Something o’ that, I said.</td></tr>
+                        <tr><td>Oh is there, she said. Something o’ that, I said.</td><td class="line">150</td></tr>
                         <tr><td>Then I’ll know who to thank, she said, and give me a straight look.</td></tr>
-                        <tr><td>HURRY UP PLEASE ITS TIME</td></tr>
+                        <tr><td style="font-variant: small-caps;">hurry up please it's time</td></tr>
                         <tr><td>If you don’t like it you can get on with it, I said.</td></tr>
                         <tr><td>Others can pick and choose if you can’t.</td></tr>
-                        <tr><td>But if Albert makes off, it won’t be for lack of telling.</td></tr>
+                        <tr><td>But if Albert makes off, it won’t be for lack of telling.</td><td class="line">155</td></tr>
                         <tr><td>You ought to be ashamed, I said, to look so antique.</td></tr>
                         <tr><td>(And her only thirty-one.)</td></tr>
                         <tr><td>I can’t help it, she said, pulling a long face,</td></tr>
                         <tr><td>It’s them pills I took, to bring it off, she said.</td></tr>
-                        <tr><td>(She’s had five already, and nearly died of young George.)</td></tr>
+                        <tr><td>(She’s had five already, and nearly died of young George.)</td><td class="line">160</td></tr>
                         <tr><td>The chemist said it would be all right, but I’ve never been the same.</td></tr>
                         <tr><td>You are a proper fool, I said.</td></tr>
                         <tr><td>Well, if Albert won’t leave you alone, there it is, I said,</td></tr>
                         <tr><td>What you get married for if you don’t want children?</td></tr>
-                        <tr><td>HURRY UP PLEASE ITS TIME</td></tr>
+                        <tr><td style="font-variant: small-caps;">hurry up please it's time</td><td class="line">165</td></tr>
                         <tr><td>Well, that Sunday Albert was home, they had a hot gammon,</td></tr>
                         <tr><td>And they asked me in to dinner, to get the beauty of it hot—</td></tr>
-                        <tr><td>HURRY UP PLEASE ITS TIME</td></tr>
-                        <tr><td>HURRY UP PLEASE ITS TIME</td></tr>
-                        <tr><td>Goonight Bill. Goonight Lou. Goonight May. Goonight.</td></tr>
+                        <tr><td style="font-variant: small-caps;">hurry up please it's time</td></tr>
+                        <tr><td style="font-variant: small-caps;">hurry up please it's time</td></tr>
+                        <tr><td>Goonight Bill. Goonight Lou. Goonight May. Goonight.</td><td class="line">170</td></tr>
                         <tr><td>Ta ta. Goonight. Goonight.</td></tr>
                         <tr><td>Good night, ladies, good night, sweet ladies, good night, good night.</td></tr>
                     </table>
+                    <p>III. THE FIRE SERMON</p>
+                    <table>
+                        <tr><td style="width: 31em">The river’s tent is broken: the last fingers of leaf</td></tr>
+                        <tr><td>Clutch and sink into the wet bank. The wind</td></tr>
+                        <tr><td>Crosses the brown land, unheard. The nymphs are departed.</td><td class="line">175</td></tr>
+                        <tr><td>Sweet Thames, run softly, till I end my song.</td></tr>
+                        <tr><td>The river bears no empty bottles, sandwich papers,</td></tr>
+                        <tr><td>Silk handkerchiefs, cardboard boxes, cigarette ends</td></tr>
+                        <tr><td>Or other testimony of summer nights. The nymphs are departed.</td></tr>
+                        <tr><td>And their friends, the loitering heirs of city directors;</td><td class="line">180</td></tr>
+                        <tr><td>Departed, have left no addresses.</td></tr>
+                        <tr><td>By the waters of Leman I sat down and wept . . .</td></tr>
+                        <tr><td>Sweet Thames, run softly till I end my song,</td></tr>
+                        <tr><td>Sweet Thames, run softly, for I speak not loud or long.</td></tr>
+                        <tr><td>But at my back in a cold blast I hear</td><td class="line">185</td></tr>
+                        <tr><td>The rattle of the bones, and chuckle spread from ear to ear.</td></tr>
+                        <tr><td>&nbsp;</td></tr>
+                        <tr><td>A rat crept softly through the vegetation</td></tr>
+                        <tr><td>Dragging its slimy belly on the bank</td></tr>
+                        <tr><td>While I was fishing in the dull canal</td></tr>
+                        <tr><td>On a winter evening round behind the gashouse</td><td class="line">190</td></tr>
+                        <tr><td>Musing upon the king my brother’s wreck</td></tr>
+                        <tr><td>And on the king my father’s death before him.</td></tr>
+                        <tr><td>White bodies naked on the low damp ground</td></tr>
+                        <tr><td>And bones cast in a little low dry garret,</td></tr>
+                        <tr><td>Rattled by the rat’s foot only, year to year.</td><td class="line">195</td></tr>
+                        <tr><td>But at my back from time to time I hear</td></tr>
+                        <tr><td>The sound of horns and motors, which shall bring</td></tr>
+                        <tr><td>Sweeney to Mrs. Porter in the spring.</td></tr>
+                        <tr><td>O the moon shone bright on Mrs. Porter</td></tr>
+                        <tr><td>And on her daughter</td><td class="line">200</td></tr>
+                        <tr><td>They wash their feet in soda water</td></tr>
+                        <tr><td><span class="tt-foreign" title="And O those voices of children singing under the cupola">Et O ces voix d’enfants, chantant dans la coupole!</span></td></tr>
+                        <tr><td>&nbsp;</td></tr>
+                        <tr><td>Twit twit twit</td></tr>
+                        <tr><td><span class="tt-eliot" title="Compare to previous line 100 of the poem.  &lt;br&gt; The 'twit', 'jug' and 'tereu' lines were used to represent the song of the nightingale. 'Jug' also had a sexual connatation. Tereu is a form of the name Tereus.">Jug jug jug jug jug jug</span></td></tr>
+                        <tr><td>So rudely forc’d.</td><td class="line">205</td></tr>
+                        <tr><td>Tereu</td></tr>
+                    </table>
+                    <table>        
+                        <tr><td style="width: 31em">Unreal City</td></tr>
+                        <tr><td>Under the brown fog of a winter noon</td></tr>
+                        <tr><td>Mr. Eugenides, the Smyrna merchant</td></tr>
+                        <tr><td>Unshaven, with a pocket full of currants</td><td class="line">210</td></tr>
+                        <tr><td>C.i.f. London: documents at sight,</td></tr>
+                        <tr><td>Asked me in demotic French</td></tr>
+                        <tr><td>To luncheon at the Cannon Street Hotel</td></tr>
+                        <tr><td>Followed by a weekend at the Metropole.</td></tr>
+                    </table>
+                    <table>
+                        <tr><td style="width: 31em">At the violet hour, when the eyes and back</td><td class="line">215</td></tr>
+                        <tr><td>Turn upward from the desk, when the human engine waits</td></tr>
+                        <tr><td>Like a taxi throbbing waiting,</td></tr>
+                        <tr><td>I Tiresias, though blind, throbbing between two lives,</td></tr>
+                        <tr><td>Old man with wrinkled female breasts, can see</td></tr>
+                        <tr><td>At the violet hour, the evening hour that strives</td><td class="line">220</td></tr>
+                        <tr><td>Homeward, and brings the sailor home from sea,</td></tr>
+                        <tr><td>The typist home at teatime, clears her breakfast, lights</td></tr>
+                        <tr><td>Her stove, and lays out food in tins.</td></tr>
+                        <tr><td>Out of the window perilously spread</td></tr>
+                        <tr><td>Her drying combinations touched by the sun’s last rays,</td><td class="line">225</td></tr>
+                        <tr><td>On the divan are piled (at night her bed)</td></tr>
+                        <tr><td>Stockings, slippers, camisoles, and stays.</td></tr>
+                        <tr><td>I Tiresias, old man with wrinkled dugs</td></tr>
+                        <tr><td>Perceived the scene, and foretold the rest—</td></tr>
+                        <tr><td>I too awaited the expected guest.</td><td class="line">230</td></tr>
+                        <tr><td>He, the young man carbuncular, arrives,</td></tr>
+                        <tr><td>A small house agent’s clerk, with one bold stare,</td></tr>
+                        <tr><td>One of the low on whom assurance sits</td></tr>
+                        <tr><td>As a silk hat on a Bradford millionaire.</td></tr>
+                        <tr><td>The time is now propitious, as he guesses,</td><td class="line">235</td></tr>
+                        <tr><td>The meal is ended, she is bored and tired,</td></tr>
+                        <tr><td>Endeavours to engage her in caresses</td></tr>
+                        <tr><td>Which still are unreproved, if undesired.</td></tr>
+                        <tr><td>Flushed and decided, he assaults at once;</td></tr>
+                        <tr><td>Exploring hands encounter no defence;</td><td class="line">240</td></tr>
+                        <tr><td>His vanity requires no response,</td></tr>
+                        <tr><td>And makes a welcome of indifference.</td></tr>
+                        <tr><td>(And I Tiresias have foresuffered all</td></tr>
+                        <tr><td>Enacted on this same divan or bed;</td></tr>
+                        <tr><td>I who have sat by Thebes below the wall</td><td class="line">245</td></tr>
+                        <tr><td>And walked among the lowest of the dead.)</td></tr>
+                        <tr><td>Bestows one final patronising kiss,</td></tr>
+                        <tr><td>And gropes his way, finding the stairs unlit . . .</td></tr>
+                    </table>
+                    <table>
+                        <tr><td style="width: 31em">She turns and looks a moment in the glass,</td></tr>
+                        <tr><td>Hardly aware of her departed lover;</td><td class="line">250</td></tr>
+                        <tr><td>Her brain allows one half-formed thought to pass:</td></tr>
+                        <tr><td>“Well now that’s done: and I’m glad it’s over.”</td></tr>
+                        <tr><td>When lovely woman stoops to folly and</td></tr>
+                        <tr><td>Paces about her room again, alone,</td></tr>
+                        <tr><td>She smoothes her hair with automatic hand,</td><td class="line">255</td></tr>
+                        <tr><td>And puts a record on the gramophone.</td></tr>
+                        <tr><td>&nbsp;</td></tr>
+                        <tr><td>“This music crept by me upon the waters”</td></tr>
+                        <tr><td>And along the Strand, up Queen Victoria Street.</td></tr>
+                        <tr><td>O City city, I can sometimes hear</td></tr>
+                        <tr><td>Beside a public bar in Lower Thames Street,</td><td class="line">260</td></tr>
+                        <tr><td>The pleasant whining of a mandoline</td></tr>
+                        <tr><td>And a clatter and a chatter from within</td></tr>
+                        <tr><td>Where fishmen lounge at noon: where the walls</td></tr>
+                        <tr><td>Of Magnus Martyr hold</td></tr>
+                        <tr><td>Inexplicable splendour of Ionian white and gold.</td><td class="line">265</td></tr>
+                    </table>
+                    <table style="margin-left: 1em">
+                        <tr><td style="width: 30em">The river sweats</td></tr>
+                        <tr><td>Oil and tar</td></tr>
+                        <tr><td>    The barges drift</td></tr>
+                        <tr><td>    With the turning tide</td></tr>
+                        <tr><td>    Red sails</td><td class="line">270</td></tr>
+                        <tr><td>    Wide</td></tr>
+                        <tr><td>    To leeward, swing on the heavy spar.</td></tr>
+                        <tr><td>    The barges wash</td></tr>
+                        <tr><td>    Drifting logs</td></tr>
+                        <tr><td>    Down Greenwich reach</td><td class="line">275</td></tr>
+                        <tr><td>    Past the Isle of Dogs.</td></tr>
+                        <tr><td style="padding-left: 6em">Weialala leia</td></tr>
+                        <tr><td style="padding-left: 6em">Wallala leialala</td></tr>
+                        <tr><td>    Elizabeth and Leicester</td></tr>
+                        <tr><td>    Beating oars</td><td class="line">280</td></tr>
+                        <tr><td>    The stern was formed</td></tr>
+                        <tr><td>    A gilded shell</td></tr>
+                        <tr><td>    Red and gold</td></tr>
+                        <tr><td>    The brisk swell</td></tr>
+                        <tr><td>    Rippled both shores</td><td class="line">285</td></tr>
+                        <tr><td>    Southwest wind</td></tr>
+                        <tr><td>    Carried down stream</td></tr>
+                        <tr><td>    The peal of bells</td></tr>
+                        <tr><td>    White towers</td></tr>
+                        <tr><td style="padding-left: 6em">Weialala leia</td><td class="line">290</td></tr>
+                        <tr><td style="padding-left: 6em">Wallala leialala</td></tr>
+                    </table>
+                    <table>
+                        <tr><td style="width: 31em">“Trams and dusty trees.</td></tr>
+                        <tr><td>Highbury bore me. Richmond and Kew</td></tr>
+                        <tr><td>Undid me. By Richmond I raised my knees</td></tr>
+                        <tr><td>Supine on the floor of a narrow canoe.”</td><td class="line">295</td></tr>
+                        <tr><td>&nbsp;</td></tr>
+                        <tr><td>“My feet are at Moorgate, and my heart</td></tr>
+                        <tr><td>Under my feet. After the event</td></tr>
+                        <tr><td>He wept. He promised a ‘new start.’</td></tr>
+                        <tr><td>I made no comment. What should I resent?”</td></tr>
+                        <tr><td>&nbsp;</td></tr>
+                        <tr><td>“On Margate Sands.</td><td class="line">300</td></tr>
+                        <tr><td>I can connect</td></tr>
+                        <tr><td>Nothing with nothing.</td></tr>
+                        <tr><td>The broken fingernails of dirty hands.</td></tr>
+                        <tr><td>My people humble people who expect</td></tr>
+                        <tr><td>Nothing.”</td><td class="line">305</td></tr>
+                        <tr><td style="padding-left: 4.5em">la la</td></tr>
+                        <tr><td>&nbsp;</td></tr>
+                        <tr><td>To Carthage then I came</td></tr>
+                        <tr><td>&nbsp;</td></tr>
+                        <tr><td>Burning burning burning burning</td></tr>
+                        <tr><td>O Lord Thou pluckest me out</td></tr>
+                        <tr><td>O Lord Thou pluckest</td><td class="line">310</td></tr>
+                        <tr><td>&nbsp;</td></tr>
+                        <tr><td>burning</td></tr>
+                    </table>
+                            
+                    <p>IV. DEATH BY WATER</p>
+                    <table>
+                        <tr><td style="width: 31em">Phlebas the Phoenician, a fortnight dead,</td></tr>
+                        <tr><td>Forgot the cry of gulls, and the deep sea swell</td></tr>
+                        <tr><td>And the profit and loss.</td></tr>
+                        <tr><td style="padding-left: 10em">A current under sea</td><td class="line">315</td></tr>
+                        <tr><td>Picked his bones in whispers. As he rose and fell</td></tr>
+                        <tr><td>He passed the stages of his age and youth</td></tr>
+                        <tr><td>Entering the whirlpool.</td></tr>
+                        <tr><td style="padding-left: 10em">Gentile or Jew</td></tr>
+                        <tr><td>O you who turn the wheel and look to windward,</td><td class="line">320</td></tr>
+                        <tr><td>Consider Phlebas, who was once handsome and tall as you.</td></tr>
+                    </table>
+                            
+                    <p>V. WHAT THE THUNDER SAID</p>
+                    <table>
+                        <tr><td style="width: 31em">After the torchlight red on sweaty faces</td></tr>
+                        <tr><td>After the frosty silence in the gardens</td></tr>
+                        <tr><td>After the agony in stony places</td></tr>
+                        <tr><td>The shouting and the crying</td><td class="line">325</td></tr>
+                        <tr><td>Prison and palace and reverberation</td></tr>
+                        <tr><td>Of thunder of spring over distant mountains</td></tr>
+                        <tr><td>He who was living is now dead</td></tr>
+                        <tr><td>We who were living are now dying</td></tr>
+                        <tr><td>With a little patience</td><td class="line">330</td></tr>
+                        <tr><td>&nbsp;</td></tr>
+                        <tr><td>Here is no water but only rock</td></tr>
+                        <tr><td>Rock and no water and the sandy road</td></tr>
+                        <tr><td>The road winding above among the mountains</td></tr>
+                        <tr><td>Which are mountains of rock without water</td></tr>
+                        <tr><td>If there were water we should stop and drink</td><td class="line">335</td></tr>
+                        <tr><td>Amongst the rock one cannot stop or think</td></tr>
+                        <tr><td>Sweat is dry and feet are in the sand</td></tr>
+                        <tr><td>If there were only water amongst the rock</td></tr>
+                        <tr><td>Dead mountain mouth of carious teeth that cannot spit</td></tr>
+                        <tr><td>Here one can neither stand nor lie nor sit</td><td class="line">340</td></tr>
+                        <tr><td>There is not even silence in the mountains</td></tr>
+                        <tr><td>But dry sterile thunder without rain</td></tr>
+                        <tr><td>There is not even solitude in the mountains</td></tr>
+                        <tr><td>But red sullen faces sneer and snarl</td></tr>
+                        <tr><td>From doors of mudcracked houses</td><td class="line">345</td></tr>
+                        <tr><td style="padding-left: 13em">If there were water</td></tr>
+                        <tr><td>And no rock</td></tr>
+                        <tr><td>If there were rock</td></tr>
+                        <tr><td>And also water</td></tr>
+                        <tr><td>And water</td></tr>
+                        <tr><td>A spring</td><td class="line">350</td></tr>
+                        <tr><td>A pool among the rock</td></tr>
+                        <tr><td>If there were the sound of water only</td></tr>
+                        <tr><td>Not the cicada</td></tr>
+                        <tr><td>And dry grass singing</td></tr>
+                        <tr><td>But sound of water over a rock</td><td class="line">355</td></tr>
+                        <tr><td>Where the hermit-thrush sings in the pine trees</td></tr>
+                        <tr><td>Drip drop drip drop drop drop drop</td></tr>
+                        <tr><td>But there is no water</td></tr>
+                    </table>
+                    <table>
+                        <tr><td style="width: 31em">Who is the third who walks always beside you?</td></tr>
+                        <tr><td>When I count, there are only you and I together</td><td class="line">360</td></tr>
+                        <tr><td>But when I look ahead up the white road</td></tr>
+                        <tr><td>There is always another one walking beside you</td></tr>
+                        <tr><td>Gliding wrapt in a brown mantle, hooded</td></tr>
+                        <tr><td>I do not know whether a man or a woman</td></tr>
+                        <tr><td>—But who is that on the other side of you?</td><td class="line">365</td></tr>
+                        <tr><td>What is that sound high in the air</td></tr>
+                        <tr><td>Murmur of maternal lamentation</td></tr>
+                        <tr><td>Who are those hooded hordes swarming</td></tr>
+                        <tr><td>Over endless plains, stumbling in cracked earth</td></tr>
+                        <tr><td>Ringed by the flat horizon only</td><td class="line">370</td></tr>
+                        <tr><td>What is the city over the mountains</td></tr>
+                        <tr><td>Cracks and reforms and bursts in the violet air</td></tr>
+                        <tr><td>Falling towers</td></tr>
+                        <tr><td>Jerusalem Athens Alexandria</td></tr>
+                        <tr><td>Vienna London</td><td class="line">375</td></tr>
+                        <tr><td>Unreal</td></tr>
+                    </table>
+                    <table>
+                        <tr><td style="width: 31em">A woman drew her long black hair out tight</td></tr>
+                        <tr><td>And fiddled whisper music on those strings</td></tr>
+                        <tr><td>And bats with baby faces in the violet light</td></tr>
+                        <tr><td>Whistled, and beat their wings</td><td class="line">380</td></tr>
+                        <tr><td>And crawled head downward down a blackened wall</td></tr>
+                        <tr><td>And upside down in air were towers</td></tr>
+                        <tr><td>Tolling reminiscent bells, that kept the hours</td></tr>
+                        <tr><td>And voices singing out of empty cisterns and exhausted wells.</td></tr>
+                        <tr><td>&nbsp;</td></tr>
+                        <tr><td>In this decayed hole among the mountains</td><td class="line">385</td></tr>
+                        <tr><td>In the faint moonlight, the grass is singing</td></tr>
+                        <tr><td>Over the tumbled graves, about the chapel</td></tr>
+                        <tr><td>There is the empty chapel, only the wind’s home.</td></tr>
+                        <tr><td>It has no windows, and the door swings,</td></tr>
+                        <tr><td>Dry bones can harm no one.</td><td class="line">390</td></tr>
+                        <tr><td>Only a cock stood on the rooftree</td></tr>
+                        <tr><td>Co co rico co co rico</td></tr>
+                        <tr><td>In a flash of lightning. Then a damp gust</td></tr>
+                        <tr><td>Bringing rain</td></tr>
+                    </table>
+                    <table>
+                        <tr><td style="width: 31em">Ganga was sunken, and the limp leaves</td><td class="line">395</td></tr>
+                        <tr><td>Waited for rain, while the black clouds</td></tr>
+                        <tr><td>Gathered far distant, over Himavant.</td></tr>
+                        <tr><td>The jungle crouched, humped in silence.</td></tr>
+                        <tr><td>Then spoke the thunder</td></tr>
+                        <tr><td style="font-variant: small-caps">da</td><td class="line">400</td></tr>
+                        <tr><td><i>Datta:</i> what have we given?</td></tr>
+                        <tr><td>My friend, blood shaking my heart</td></tr>
+                        <tr><td>The awful daring of a moment’s surrender</td></tr>
+                        <tr><td>Which an age of prudence can never retract</td></tr>
+                        <tr><td>By this, and this only, we have existed</td><td class="line">405</td></tr>
+                        <tr><td>Which is not to be found in our obituaries</td></tr>
+                        <tr><td>Or in memories draped by the beneficent spider</td></tr>
+                        <tr><td>Or under seals broken by the lean solicitor</td></tr>
+                        <tr><td>In our empty rooms</td></tr>
+                        <tr><td style="font-variant: small-caps">da</td><td class="line">410</td></tr>
+                        <tr><td><i>Dayadhvam:</i> I have heard the key</td></tr>
+                        <tr><td>Turn in the door once and turn once only</td></tr>
+                        <tr><td>We think of the key, each in his prison</td></tr>
+                        <tr><td>Thinking of the key, each confirms a prison</td></tr>
+                        <tr><td>Only at nightfall, aethereal rumours</td><td class="line">415</td></tr>
+                        <tr><td>Revive for a moment a broken Coriolanus</td></tr>
+                        <tr><td style="font-variant: small-caps">da</td></tr>
+                        <tr><td><i>Damyata:</i> The boat responded</td></tr>
+                        <tr><td>Gaily, to the hand expert with sail and oar</td></tr>
+                        <tr><td>The sea was calm, your heart would have responded</td><td class="line">420</td></tr>
+                        <tr><td>Gaily, when invited, beating obedient</td></tr>
+                        <tr><td>To controlling hands</td></tr>
+                    </table>
+                    <table
+                        <tr><td style="width: 31em">I sat upon the shore</td></tr>
+                        <tr><td>Fishing, with the arid plain behind me</td></tr>
+                        <tr><td>Shall I at least set my lands in order?</td><td class="line">425</td></tr>
+                        <tr><td>&nbsp;</td></tr>
+                        <tr><td>London Bridge is falling down falling down falling down</td></tr>
+                        <tr><td><span class="tt-foreign" title="Then he vanished into the fire that refines them">Poi s’ascose nel foco che gli affina</span></td></tr>
+                        <tr><td><span class="tt-foreign" title="When shall I become like the swallow">Quando fiam uti chelidon</span>—O swallow swallow</td></tr>
+                        <tr><td><span class="tt-foreign" title="The Prince of Aquitaine at the ruined tower">Le Prince d’Aquitaine à la tour abolie</span></td></tr>
+                        <tr><td>These fragments I have shored against my ruins</td><td class="line">430</td></tr>
+                        <tr><td>Why then <span class="tt-foreign" title="I'll oblige you">Ile fit you.</span> Hieronymo’s mad againe.</td></tr>
+                        <tr><td>Datta. Dayadhvam. Damyata.</td></tr>
+                        <tr><td>&nbsp;</td></tr>
+                        <tr><td style="padding-left: 2em">Shantih&nbsp;&nbsp;&nbsp;&nbsp;shantih&nbsp;&nbsp;&nbsp;&nbsp;shantih</td></tr>
+                    </table>
+
                 </div>
             </div>
         </div>
