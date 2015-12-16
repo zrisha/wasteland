@@ -32,6 +32,7 @@
   <!-- Scripts -->
   <script src="jquery-2.1.4.min.js"></script>
   <script src="js/jquery.tooltipster.min.js"></script>
+  <script src="js/navscroll.js"></script>
  
 <!-- &lt;br&gt;  &lt;br&gt; -->
     
@@ -41,7 +42,8 @@
               
               $('.tt-foreign').tooltipster({
                   position: 'bottom',
-                  theme: 'tooltip-foreign'
+                  theme: 'tooltip-foreign',
+                  contentAsHTML: true
               });
               
               $('.tt-eliot').tooltipster({
@@ -75,18 +77,28 @@
         <ul>
             <li>Home</li>
             <li><a href="about.html">About</a></li>
+            <li><a href="credits.html">Credits</a></li>
         </ul>
             
     </div>
     <div style="white-space: nowrap" class="text">
-        <div class="container">
+        <div class="container" style="margin-left: 5%">
             <div class="row">
-                <div class="two columns">
-                    <p> </p>
+                <div class="three columns">
+                    <div class="navscroll">
+                        <ul>
+                            <li><a href="#section1">I. The Burial of the Dead</a></li>
+                            <li><a href="#section2">II. A Game of Chess</a></li>
+                            <li><a href="#section3">III. The Fire Sermon</a></li>
+                            <li><a href="#section4">IV. Death By Water</a></li>
+                            <li><a href="#section5">V. What the Thunder Said</a></li>
+                        </ul>
+                    </div>
+                    <p> &nbsp;</p>
                 </div>
                 <div class="eight columns">
                     <h4>The Waste Land</h4>
-                    <p>I. THE BURIAL OF THE DEAD</p>
+                    <p><a name="section1">I. THE BURIAL OF THE DEAD</a></p>
                     
                     <table>
                         <tr><td style="width: 31em">April is the cruellest month, breeding</td></tr>
@@ -179,14 +191,8 @@
                         <tr><td>“Or with his nails he’ll dig it up again!</td><td class="line">75</td></tr>
                         <tr><td>"You! <span class="tt-foreign" title="Hypocrite reader!—My twin!—My brother! (Baudelaire, Preface to Fleurs du Mal)">hypocrite lecteur!—mon semblable,—mon frère!”</span></td></tr>
                     </table>
-                </div>
-            </div>
-            <div class="row">
-                <div class="two columns">
-                    <p> </p>
-                </div>
-                <div class="eight columns">
-                    <p>II. A GAME OF CHESS</p>
+            
+                    <p><a name="section2">II. A GAME OF CHESS</a></p>
                     <table>
                         <tr><td style="width: 31em"><span class="tt-eliot" title="Eliot cites Shakespeare's Anthony and Cleopatra II.ii.190. Enobarbus, a follower of Marc Antony, decribes Cleopatra floating on her ship to Anthony. &lt;br&gt; &lt;br&gt; The barge she sat in, like a burnished throne, &lt;br&gt; Burned on the water: the poop was beaten gold; &lt;br&gt; Purple the sails, and so perfumèd that &lt;br&gt; The winds were lovesick with them; the oars were silver"> The Chair she sat in, like a burnished throne,</span></td></tr>
                         <tr><td>Glowed on the marble, where the glass</td></tr>
@@ -293,12 +299,12 @@
                         <tr><td>Ta ta. Goonight. Goonight.</td></tr>
                         <tr><td>Good night, ladies, good night, sweet ladies, good night, good night.</td></tr>
                     </table>
-                    <p>III. THE FIRE SERMON</p>
+                        <p><a name="section3">III. THE FIRE SERMON</a></p>
                     <table>
                         <tr><td style="width: 31em">The river’s tent is broken: the last fingers of leaf</td></tr>
                         <tr><td>Clutch and sink into the wet bank. The wind</td></tr>
                         <tr><td>Crosses the brown land, unheard. The nymphs are departed.</td><td class="line">175</td></tr>
-                        <tr><td>Sweet Thames, run softly, till I end my song.</td></tr>
+                        <tr><td><span class="tt-eliot" title="Spenser, Prothalamion &lt;br&gt; 'Against the Brydale day, which is not long: &lt;br&gt; Sweete Themmes runne softly, till I end my Song.'">Sweet Thames, run softly, till I end my song.</span></td></tr>
                         <tr><td>The river bears no empty bottles, sandwich papers,</td></tr>
                         <tr><td>Silk handkerchiefs, cardboard boxes, cigarette ends</td></tr>
                         <tr><td>Or other testimony of summer nights. The nymphs are departed.</td></tr>
@@ -315,17 +321,17 @@
                         <tr><td>While I was fishing in the dull canal</td></tr>
                         <tr><td>On a winter evening round behind the gashouse</td><td class="line">190</td></tr>
                         <tr><td>Musing upon the king my brother’s wreck</td></tr>
-                        <tr><td>And on the king my father’s death before him.</td></tr>
+                        <tr><td><span class="tt-eliot" title="Cf. The Tempest, I, ii. &lt;br&gt; Eliot references The Tempest, Ferdinand musing by himself on the shore where he has been shipwrecked, hears a song by one of the spirits: &lt;br&gt; 'Sitting on a bank, &lt;br&gt; Weeping again the King my father’s wrack, &lt;br&gt; This music crept by me upon the waters, &lt;br&gt; Allaying both their fury and my passion &lt;br&gt; With its sweet air.'">And on the king my father’s death before him.</span></td></tr>
                         <tr><td>White bodies naked on the low damp ground</td></tr>
                         <tr><td>And bones cast in a little low dry garret,</td></tr>
                         <tr><td>Rattled by the rat’s foot only, year to year.</td><td class="line">195</td></tr>
-                        <tr><td>But at my back from time to time I hear</td></tr>
-                        <tr><td>The sound of horns and motors, which shall bring</td></tr>
-                        <tr><td>Sweeney to Mrs. Porter in the spring.</td></tr>
-                        <tr><td>O the moon shone bright on Mrs. Porter</td></tr>
+                        <tr><td><span class="tt-eliot" title="Cf. Marvell, 'To His Coy Mistress.' &lt;br&gt; 'But at my back I always hear &lt;br&gt; Time's winged chariot hurrying near;  &lt;br&gt; And yonder all before us lie &lt;br&gt; Deserts of vast eternity.'">But at my back from time to time I hear</span></td></tr>
+                        <tr><td><span class="tt-eliot" title="Cf. Day, Parliament of Bees: &lt;br&gt; 'When of the sudden, listening, you shall hear, &lt;br&gt; A noise of horns and hunting, which shall bring &lt;br&gt; Actaeon to Diana in the spring, &lt;br&gt; Where all shall see her naked skin . . .' &lt;br&gt; &lt;br&gt; References myth of hunter Actaeon who comes across Diana naked and stares. To punish him, Diana forbades him to speak lest he turn into stag. Upon hearing his hunting party, Actaeon calls out only to transform. At this he fled, only to be devoured by his hunting hounds who no longer recognized him.">The sound of horns and motors, which shall bring</td></tr>
+                        <tr><td>Sweeney to Mrs. Porter in the spring.</span></td></tr>
+                        <tr><td><span class="tt-eliot" title="I do know the origin of the ballad from which these lines are taken; it was reported to me from Sydney, Australia.">O the moon shone bright on Mrs. Porter</td></tr>
                         <tr><td>And on her daughter</td><td class="line">200</td></tr>
                         <tr><td>They wash their feet in soda water</td></tr>
-                        <tr><td><span class="tt-foreign" title="And O those voices of children singing under the cupola">Et O ces voix d’enfants, chantant dans la coupole!</span></td></tr>
+                        <tr><td><span class="tt-foreign" title="V. Verlaine, 'Parsifal.' &lt;br&gt; 'And O those voices of children singing under the cupola' &lt;br&gt; &lt;br&gt; Verlaine's poem refers to Wagner's opera in which knight Parisifal overcomes the temptations of the flower maidens and the beautiful Kundry. Parisfal recovers the sacred spear that pierced Christ's side which he uses to heal Afortas, the Fisher King—afterwards a choir of young boys sing.">Et O ces voix d’enfants, chantant dans la coupole!</span></td></tr>
                         <tr><td>&nbsp;</td></tr>
                         <tr><td>Twit twit twit</td></tr>
                         <tr><td><span class="tt-eliot" title="Compare to previous line 100 of the poem.  &lt;br&gt; The 'twit', 'jug' and 'tereu' lines were used to represent the song of the nightingale. 'Jug' also had a sexual connatation. Tereu is a form of the name Tereus.">Jug jug jug jug jug jug</span></td></tr>
@@ -336,7 +342,7 @@
                         <tr><td style="width: 31em">Unreal City</td></tr>
                         <tr><td>Under the brown fog of a winter noon</td></tr>
                         <tr><td>Mr. Eugenides, the Smyrna merchant</td></tr>
-                        <tr><td>Unshaven, with a pocket full of currants</td><td class="line">210</td></tr>
+                        <tr><td><span class="tt-eliot" title="The currants were quoted at a price 'carriage and insurance free to London'; and the Bill of Lading etc. were to be handed to the buyer upon pament of the sight draft.">Unshaven, with a pocket full of currants</span></td><td class="line">210</td></tr>
                         <tr><td>C.i.f. London: documents at sight,</td></tr>
                         <tr><td>Asked me in demotic French</td></tr>
                         <tr><td>To luncheon at the Cannon Street Hotel</td></tr>
@@ -346,10 +352,10 @@
                         <tr><td style="width: 31em">At the violet hour, when the eyes and back</td><td class="line">215</td></tr>
                         <tr><td>Turn upward from the desk, when the human engine waits</td></tr>
                         <tr><td>Like a taxi throbbing waiting,</td></tr>
-                        <tr><td>I Tiresias, though blind, throbbing between two lives,</td></tr>
+                        <tr><td><span class="tt-eliot" title="Tiresias, although a mere spectator and not indeed a 'character', is yet the most important personage in the poem, uniting all the rest. Just as the one-eyed merchant, seller of currants, melts into the Phoenician Sailor, and the latter is not wholly distinct from Ferdinand Prince of Naples, so all the women are one woman, and the two sexes meet in Tiresias. What Tiresias sees, in fact, is the substance of the poem.  &lt;br&gt;  &lt;br&gt; Tiresias is a legendary blind seer from Thebes. One day, he saw snakes coupling and struck them with a stick, he was instantly transformed into a woman; seven years later the same thing happened again and he was turned back into a man. Since he had experienced both sexes, he was asked by Jove and Juno to settle a dispute concerning whether men or women had greater pleasure in making love. Tiersias took the side of Jove and answered women, Juno blinded him in anger. In compesation, Jove gave him the gift of prophecy and long life. ">I Tiresias, though blind, throbbing between two lives,</span></td></tr>
                         <tr><td>Old man with wrinkled female breasts, can see</td></tr>
                         <tr><td>At the violet hour, the evening hour that strives</td><td class="line">220</td></tr>
-                        <tr><td>Homeward, and brings the sailor home from sea,</td></tr>
+                        <tr><td><span class="tt-eliot" title="This may not appear as exact as Sappho's lines, but I had in mind the 'longshore' or 'dory' fisherman, who returns at nightfall.">Homeward, and brings the sailor home from sea,</span></td></tr>
                         <tr><td>The typist home at teatime, clears her breakfast, lights</td></tr>
                         <tr><td>Her stove, and lays out food in tins.</td></tr>
                         <tr><td>Out of the window perilously spread</td></tr>
@@ -383,23 +389,23 @@
                         <tr><td>Hardly aware of her departed lover;</td><td class="line">250</td></tr>
                         <tr><td>Her brain allows one half-formed thought to pass:</td></tr>
                         <tr><td>“Well now that’s done: and I’m glad it’s over.”</td></tr>
-                        <tr><td>When lovely woman stoops to folly and</td></tr>
+                        <tr><td><span class="tt-eliot" title="V. Goldsmith, the song in The Vicar of Wakefield &lt;br&gt; When Lovely woman stoops to folly, &lt;br&gt; And finds too late that men betray, &lt;br&gt; What charm can sooth her melancholy, &lt;br&gt; What art can wash her guilt away? &lt;br&gt; The only art her guilt to cover, &lt;br&gt; &nbsp; &nbsp; To hide her shame from every eye, &lt;br&gt; To give repentance to her lover, &lt;br&gt; &nbsp; &nbsp; And writing his bosom—is to die.">When lovely woman stoops to folly and</span></td></tr>
                         <tr><td>Paces about her room again, alone,</td></tr>
                         <tr><td>She smoothes her hair with automatic hand,</td><td class="line">255</td></tr>
                         <tr><td>And puts a record on the gramophone.</td></tr>
                         <tr><td>&nbsp;</td></tr>
-                        <tr><td>“This music crept by me upon the waters”</td></tr>
+                        <tr><td><span class="tt-eliot" title="V. The Tempest, as above.">“This music crept by me upon the waters”</span></td></tr>
                         <tr><td>And along the Strand, up Queen Victoria Street.</td></tr>
                         <tr><td>O City city, I can sometimes hear</td></tr>
                         <tr><td>Beside a public bar in Lower Thames Street,</td><td class="line">260</td></tr>
                         <tr><td>The pleasant whining of a mandoline</td></tr>
                         <tr><td>And a clatter and a chatter from within</td></tr>
                         <tr><td>Where fishmen lounge at noon: where the walls</td></tr>
-                        <tr><td>Of Magnus Martyr hold</td></tr>
+                        <tr><td><span class="tt-eliot" title="The interior of St. Magnus Martyr is to mind one of the finest among Wren's interiors. See The Proposed Demolition of Nineteen City Churches (P.S. King & Son Ltd.).">Of Magnus Martyr hold</span></td></tr>
                         <tr><td>Inexplicable splendour of Ionian white and gold.</td><td class="line">265</td></tr>
                     </table>
                     <table style="margin-left: 1em">
-                        <tr><td style="width: 30em">The river sweats</td></tr>
+                        <tr><td style="width: 30em"><span class="tt-eliot" title="The Song of the (three) Thames-daughters begins here. From line 292 to 306 inclusive they speak in turn. V. Götterdämmerung, III, i: the Rhine-daughters.">The river sweats</span></td></tr>
                         <tr><td>Oil and tar</td></tr>
                         <tr><td>    The barges drift</td></tr>
                         <tr><td>    With the turning tide</td></tr>
@@ -409,7 +415,7 @@
                         <tr><td>    The barges wash</td></tr>
                         <tr><td>    Drifting logs</td></tr>
                         <tr><td>    Down Greenwich reach</td><td class="line">275</td></tr>
-                        <tr><td>    Past the Isle of Dogs.</td></tr>
+                        <tr><td>    <span class="tt-eliot" title="V. Froude, Elizabeth, vol. I, ch. iv, letter of De Quadra to Philip of Spain: In the afternoon we were in a barge, watching the games on the river. (The queen) was alone with Lord Robert and myself on the poop, when they began to talk nonsense, and went so far that Lord Robert at last said, as I was on the spot there was no reason why they should not be married if the queen pleased.">Past the Isle of Dogs.</span></td></tr>
                         <tr><td style="padding-left: 6em">Weialala leia</td></tr>
                         <tr><td style="padding-left: 6em">Wallala leialala</td></tr>
                         <tr><td>    Elizabeth and Leicester</td></tr>
@@ -428,7 +434,7 @@
                     </table>
                     <table>
                         <tr><td style="width: 31em">“Trams and dusty trees.</td></tr>
-                        <tr><td>Highbury bore me. Richmond and Kew</td></tr>
+                        <tr><td><span class="tt-eliot" title="Cf. Purgatorio, V. 133: &lt;br&gt; 'remember me, who am La Pia: &lt;br&gt; Sienna bore me; the Maremma undid me.">Highbury bore me. Richmond and Kew</span></td></tr>
                         <tr><td>Undid me. By Richmond I raised my knees</td></tr>
                         <tr><td>Supine on the floor of a narrow canoe.”</td><td class="line">295</td></tr>
                         <tr><td>&nbsp;</td></tr>
@@ -445,16 +451,16 @@
                         <tr><td>Nothing.”</td><td class="line">305</td></tr>
                         <tr><td style="padding-left: 4.5em">la la</td></tr>
                         <tr><td>&nbsp;</td></tr>
-                        <tr><td>To Carthage then I came</td></tr>
+                        <tr><td><span class="tt-eliot" title="V. St. Augustine's Confessions: 'to Carthage then I came, where a cauldron of unholy loves sang all about mine ears.' &lt;br&gt; &lt;br&gt; Augustine reflects on his impure thoughts and actions while studying in the sinful city of Carthage. Augustine further reflects on the agonies of love. He credits his conversion to Cicero's Hortensius, commenting 'How I did burn then, my God, how did I burn to re-mount from earthly things to thee.'">To Carthage then I came</span></td></tr>
                         <tr><td>&nbsp;</td></tr>
-                        <tr><td>Burning burning burning burning</td></tr>
+                        <tr><td><span class="tt-eliot" title="The complete text of the Buddha's Fire Sermon (which corresponds in importance to the Sermon the Mount) from which these words are taken, will be found translated in the late Henry Clarke Warren's Buddhism in Translation (Harvard Oriental Series). Mr. Warren was one of the great pioneers of Buddhist studies in the occident.">Burning burning burning burning</td></tr>
                         <tr><td>O Lord Thou pluckest me out</td></tr>
                         <tr><td>O Lord Thou pluckest</td><td class="line">310</td></tr>
                         <tr><td>&nbsp;</td></tr>
                         <tr><td>burning</td></tr>
                     </table>
                             
-                    <p>IV. DEATH BY WATER</p>
+                    <p><a name="section4">IV. DEATH BY WATER</a></p>
                     <table>
                         <tr><td style="width: 31em">Phlebas the Phoenician, a fortnight dead,</td></tr>
                         <tr><td>Forgot the cry of gulls, and the deep sea swell</td></tr>
@@ -468,7 +474,7 @@
                         <tr><td>Consider Phlebas, who was once handsome and tall as you.</td></tr>
                     </table>
                             
-                    <p>V. WHAT THE THUNDER SAID</p>
+            <p><a name="section5"><span class="tt-eliot" title="In the first part of Part V three themes are employed: the journey to Emmanus, the apporach to the Chapel Perilous (see Miss Weston's book) and the present decay of eastern Europe">V. WHAT THE THUNDER SAID</span></a></p>
                     <table>
                         <tr><td style="width: 31em">After the torchlight red on sweaty faces</td></tr>
                         <tr><td>After the frosty silence in the gardens</td></tr>
@@ -507,18 +513,18 @@
                         <tr><td>And dry grass singing</td></tr>
                         <tr><td>But sound of water over a rock</td><td class="line">355</td></tr>
                         <tr><td>Where the hermit-thrush sings in the pine trees</td></tr>
-                        <tr><td>Drip drop drip drop drop drop drop</td></tr>
+                        <tr><td><span class="tt-eliot" title="This is Turdus aonalaschkae pallasii, the hermit-thrush which I have heard in Quebec County. Chapman says (Handbook of Birds of Eastern North America) 'it is most at home in secluded woodland and thickety retreats. . . . Its notes are not remarkable for variety or volume, but in purity and sweetness of tone and exquisite modulation they are unequalled.' Its 'water-dripping song' is justly celebrated.">Drip drop drip drop drop drop drop</span></td></tr>
                         <tr><td>But there is no water</td></tr>
                     </table>
                     <table>
                         <tr><td style="width: 31em">Who is the third who walks always beside you?</td></tr>
-                        <tr><td>When I count, there are only you and I together</td><td class="line">360</td></tr>
+                        <tr><td><span class="tt-eliot" title="The following lines were stimulated by the account of one of the Antarctic expeditions (I forget which, but I think one of Shackleton's): it was related that the party of explorers, at the extremity of their strength, had the constant delusion that there was one more member than could actually be counted.">When I count, there are only you and I together</span></td><td class="line">360</td></tr>
                         <tr><td>But when I look ahead up the white road</td></tr>
                         <tr><td>There is always another one walking beside you</td></tr>
                         <tr><td>Gliding wrapt in a brown mantle, hooded</td></tr>
                         <tr><td>I do not know whether a man or a woman</td></tr>
                         <tr><td>—But who is that on the other side of you?</td><td class="line">365</td></tr>
-                        <tr><td>What is that sound high in the air</td></tr>
+                        <tr><td><span class="tt-eliot" title="Cf. Hermann Hesse, Blick ins Chaos: &lt;br&gt;&lt;br&gt; 'Half of Europe, at least half of Eastern Europe is already on the road to chaos, moving in a drunken state in holy delusion along the abyss and singing also, singing intoxicated and hymn-like like Dmitri Karamasoff sang. The common man laughs about the songs and is offended, the saint and the prophet are listening in tears.' ">What is that sound high in the air</span></td></tr>
                         <tr><td>Murmur of maternal lamentation</td></tr>
                         <tr><td>Who are those hooded hordes swarming</td></tr>
                         <tr><td>Over endless plains, stumbling in cracked earth</td></tr>
@@ -558,17 +564,20 @@
                         <tr><td>The jungle crouched, humped in silence.</td></tr>
                         <tr><td>Then spoke the thunder</td></tr>
                         <tr><td style="font-variant: small-caps">da</td><td class="line">400</td></tr>
-                        <tr><td><i>Datta:</i> what have we given?</td></tr>
+                        <tr><td><span class="tt-eliot" title="'Datta, dayadhvam, damyata' (Give, sympathize, control). The fable of the meaning of the Thunder is found in the Brihadaranyaka--Upanishad, 5, I. A translation is found in Deussen's Sechzig Upanishads des Veda, p. 489."><i>Datta:</i> what have we given?</span></td></tr>
                         <tr><td>My friend, blood shaking my heart</td></tr>
                         <tr><td>The awful daring of a moment’s surrender</td></tr>
                         <tr><td>Which an age of prudence can never retract</td></tr>
                         <tr><td>By this, and this only, we have existed</td><td class="line">405</td></tr>
                         <tr><td>Which is not to be found in our obituaries</td></tr>
-                        <tr><td>Or in memories draped by the beneficent spider</td></tr>
+                        <tr><td><span class="tt-eliot" title="Cf. Webster, The White Devil, V, vi: &lt;br&gt;
+                    . . . they'll remarry &lt;br&gt;
+Ere the worm pierce your winding-sheet, ere the spider &lt;br&gt;
+Make a thin curtain for your epitaphs.">Or in memories draped by the beneficent spider</span></td></tr>
                         <tr><td>Or under seals broken by the lean solicitor</td></tr>
                         <tr><td>In our empty rooms</td></tr>
                         <tr><td style="font-variant: small-caps">da</td><td class="line">410</td></tr>
-                        <tr><td><i>Dayadhvam:</i> I have heard the key</td></tr>
+                        <tr><td><span class="tt-eliot" title="Cf. Inferno, XXXIII, 46: &lt;br&gt; 'and I heard, at its outlet underneath lock'd up the' horrible tower'"><i>Dayadhvam:</i> I have heard the key</span></td></tr>
                         <tr><td>Turn in the door once and turn once only</td></tr>
                         <tr><td>We think of the key, each in his prison</td></tr>
                         <tr><td>Thinking of the key, each confirms a prison</td></tr>
@@ -583,23 +592,155 @@
                     </table>
                     <table
                         <tr><td style="width: 31em">I sat upon the shore</td></tr>
-                        <tr><td>Fishing, with the arid plain behind me</td></tr>
+        <tr><td><span class="tt-eliot" title="V. Weston, From Ritual to Romance; chapter on the Fisher King.">Fishing, with the arid plain behind me</span></td></tr>
                         <tr><td>Shall I at least set my lands in order?</td><td class="line">425</td></tr>
                         <tr><td>&nbsp;</td></tr>
                         <tr><td>London Bridge is falling down falling down falling down</td></tr>
-                        <tr><td><span class="tt-foreign" title="Then he vanished into the fire that refines them">Poi s’ascose nel foco che gli affina</span></td></tr>
-                        <tr><td><span class="tt-foreign" title="When shall I become like the swallow">Quando fiam uti chelidon</span>—O swallow swallow</td></tr>
-                        <tr><td><span class="tt-foreign" title="The Prince of Aquitaine at the ruined tower">Le Prince d’Aquitaine à la tour abolie</span></td></tr>
+                        <tr><td><span class="tt-foreign" title="Then he vanished into the fire that refines them  &lt;br&gt; &lt;br&gt; V. Purgatorio, XXVI, 148. &lt;br&gt; 'And so I pray you, by that virtue  &lt;br&gt;
+which guides you to the top of the stair,  &lt;br&gt;
+be reminded in time of my pain.'  &lt;br&gt;
+Then he hid himself in the fire that purifies them.">Poi s’ascose nel foco che gli affina</span></td></tr>
+                        <tr><td><span class="tt-foreign" title="When shall I become like the swallow &lt;br&gt; &lt;br&gt; V. Pervigilium Veneris. Cf. Philomela in Parts II and III.">Quando fiam uti chelidon</span>—O swallow swallow</td></tr>
+                        <tr><td><span class="tt-foreign" title="The Prince of Aquitaine at the ruined tower &lt;br&gt; V. Gerard de Nerval, Sonnet El Desdichado.">Le Prince d’Aquitaine à la tour abolie</span></td></tr>
                         <tr><td>These fragments I have shored against my ruins</td><td class="line">430</td></tr>
                         <tr><td>Why then <span class="tt-foreign" title="I'll oblige you">Ile fit you.</span> Hieronymo’s mad againe.</td></tr>
                         <tr><td>Datta. Dayadhvam. Damyata.</td></tr>
                         <tr><td>&nbsp;</td></tr>
-                        <tr><td style="padding-left: 2em">Shantih&nbsp;&nbsp;&nbsp;&nbsp;shantih&nbsp;&nbsp;&nbsp;&nbsp;shantih</td></tr>
+        <tr><td style="padding-left: 2em"><span class="tt-eliot" title="Shantih. Repeated as here, a formal ending to an Upanishad. 'The Peace which passeth understanding' is our equivalent to this word.">Shantih&nbsp;&nbsp;&nbsp;&nbsp;shantih&nbsp;&nbsp;&nbsp;&nbsp;shantih</span></td></tr>
                     </table>
-
                 </div>
             </div>
         </div>
+    </div>
+    <div class="annotation">
+        <div class="container" style="margin-left: 5%">
+            <div class="row">
+                <div class="three columns">
+                    <p> &nbsp;</p>
+                </div>
+                <div class="eight columns">
+                    <h4>Notes</h4>
+                    <p>Not only the title, but the plan and a good deal of the incidental symbolism of the poem were suggested by Miss Jessie L. Weston’s book on the Grail legend: From Ritual to Romance (Macmillan). Indeed, so deeply am I indebted, Miss Weston’s book will elucidate the difficulties of the poem much better than my notes can do; and I recommend it (apart from the great interest of the book itself) to any who think such elucidation of the poem worth the trouble. To another work of anthropology I am indebted in general, one which has influenced our generation profoundly; I mean The Golden Bough; I have used especially the two volumes Attis Adonis Osiris. Anyone who is acquainted with these works will immediately recognise in the poem certain references to vegetation ceremonies.</p>
+                    <p>I. THE BURIAL OF THE DEAD</p>
+                    <table>
+                        <tr><td></td><td>Line 20. Cf. Ezekiel II, i.</td></tr>
+                        <tr><td>23.</td><td> Cf. Ecclesiastes XII, v. </td></tr>
+                        <tr><td>31.</td><td> V. Tristan und Isolde, I, verses 5–8.</td></tr> 
+                        <tr><td>42.</td><td> Id. III, verse 24. </td></tr>
+                        <tr><td>46.</td><td> I am not familiar with the exact constitution of the Tarot pack of cards, from which I have obviously departed to suit my own convenience. The Hanged Man, a member of the traditional pack, fits my purpose in two ways: because he is associated in my mind with the Hanged God of Frazer, and because I associate him with the hooded figure in the passage of the disciples to Emmaus in Part V. The Phoenician Sailor and the Merchant appear later; also the “crowds of people,” and Death by Water is executed in Part IV. The Man with Three Staves (an authentic member of the Tarot pack) I associate, quite arbitrarily, with the Fisher King himself. </td></tr>
+                        <tr><td>60.</td><td> Cf. Baudelaire: <br> <br>
+                        “Fourmillante cité, cité pleine de rèves, <br>
+                        Où le spectre en plein jour raccroche le passant.” <br> &nbsp; </td></tr>
+                        <tr><td>63.</td><td> Cf. Inferno, III. 55–57:<br> <br>
+                                              “si lunga tratta<br>
+                        di gente, ch’io non avrei mai creduto<br>
+                        che morte tanta n’avesse disfatta.” <br> &nbsp;</td></tr>
+                        <tr><td>64.</td><td> Cf. Inferno, IV. 25–27: <br><br>
+                        “Quivi, secondo che per ascoltare,<br>
+                        “non avea pianto, ma’ che di sospiri,<br>
+                        “che l’aura eterna facevan tremare.” <br> &nbsp;</td></tr>
+                        <tr><td>68.</td><td> A phenomenon which I have often noticed. </td></tr>
+                        <tr><td>74.</td><td> Cf. the Dirge in Webster’s White Devil. </td></tr>
+                        <tr><td>76.</td><td> V. Baudelaire, Preface to Fleurs du Mal. </td></tr>
+                    </table>
+                    <p>II. A GAME OF CHESS</p>
+                    <table>
+                        <tr><td>77. Cf. Antony and Cleopatra, II., ii. l. 190. </td></tr>
+                        <tr><td>92. Laquearia. V. Aeneid, I, 726:<br><br>
+                              dependent lychni laquearibus aureis<br>
+                        incensi, et noctem flammis funalia vincunt. <br> &nbsp;</td></tr>
+                        <tr><td>98. Sylvan scene. V. Milton, Paradise Lost, IV. 140.</td></tr> 
+                        <tr><td>99. V. Ovid, Metamorphoses, VI, Philomela. </td></tr>
+                        <tr><td>100. Cf. Part III, l. 204. </td></tr>
+                        <tr><td>115. Cf. Part III, l. 195. </td></tr>
+                        <tr><td>118. Cf. Webster: “Is the wind in that door still?” </td></tr>
+                        <tr><td>126. Cf. Part I, l. 37, 48. </td></tr>
+                        <tr><td>138. Cf. the game of chess in Middleton’s Women beware Women. </td></tr>
+                    </table>
+                    <p>III. THE FIRE SERMON</p>
+                    <table>
+                        <tr><td>176.</td><td> V. Spenser, Prothalamion. </td></tr>
+                        <tr><td>192.</td><td> Cf. The Tempest, I, ii. </td></tr>
+                        <tr><td>196.</td><td> Cf. Day, Parliament of Bees: <br><br>
+                        “When of the sudden, listening, you shall hear,<br>
+                        “A noise of horns and hunting, which shall bring<br>
+                        “Actaeon to Diana in the spring,<br>
+                        “Where all shall see her naked skin…" <br> &nbsp;</td></tr>
+                        <tr><td>197.</td><td> Cf. Marvell, To His Coy Mistress. </td></tr>
+                        <tr><td>199.</td><td> I do not know the origin of the ballad from which these lines are taken; it was reported to me from Sydney, Australia. </td></tr>
+                        <tr><td>202.</td><td> V. Verlaine, Parsifal. </td></tr>
+                        <tr><td>210.</td><td> The currants were quoted at a price “carriage and insurance free to London”; and the Bill of Lading, etc. were to be handed to the buyer upon payment of the sight draft. </td></tr>
+                        <tr><td>218.</td><td> Tiresias, although a mere spectator and not indeed a “character,” is yet the most important personage in the poem, uniting all the rest. Just as the one-eyed merchant, seller of currants, melts into the Phoenician Sailor, and the latter is not wholly distinct from Ferdinand Prince of Naples, so all the women are one woman, and the two sexes meet in Tiresias. What Tiresias sees, in fact, is the substance of the poem. The whole passage from Ovid is of great anthropological interest: <br><br>
+                        …Cum Iunone iocos et maior vestra profecto est<br>
+                        Quam, quae contingit maribus’, dixisse, ‘voluptas.’<br>
+                        Illa negat; placuit quae sit sententia docti<br>
+                        Quaerere Tiresiae: venus huic erat utraque nota.<br>
+                        Nam duo magnorum viridi coeuntia silva<br>
+                        Corpora serpentum baculi violaverat ictu<br>
+                        Deque viro factus, mirabile, femina septem<br>
+                        Egerat autumnos; octavo rursus eosdem<br>
+                        Vidit et ‘est vestrae si tanta potentia plagae,’<br>
+                        Dixit ‘ut auctoris sortem in contraria mutet,<br>
+                        Nunc quoque vos feriam!’ percussis anguibus isdem<br>
+                        Forma prior rediit genetivaque venit imago.<br>
+                        Arbiter hic igitur sumptus de lite iocosa<br>
+                        Dicta Iovis firmat; gravius Saturnia iusto<br>
+                        Nec pro materia fertur doluisse suique<br>
+                        Iudicis aeterna damnavit lumina nocte,<br>
+                        At pater omnipotens (neque enim licet inrita cuiquam<br>
+                        Facta dei fecisse deo) pro lumine adempto<br>
+                        Scire futura dedit poenamque levavit honore. <br> &nbsp;</td></tr>
+                        <tr><td>221.</td><td> This may not appear as exact as Sappho’s lines, but I had in mind the “longshore” or “dory” fisherman, who returns at nightfall. </td></tr>
+                        <tr><td>253.</td><td> V. Goldsmith, the song in The Vicar of Wakefield. </td></tr>
+                        <tr><td>257.</td><td> V. The Tempest, as above. </td></tr>
+                        <tr><td>264.</td><td> The interior of St. Magnus Martyr is to my mind one of the finest among Wren’s interiors. See The Proposed Demolition of Nineteen City Churches: (P. S. King & Son, Ltd.). </td></tr>
+                        <tr><td>266.</td><td> The Song of the (three) Thames-daughters begins here. From line 292 to 306 inclusive they speak in turn. V. Götterdämmerung, III, i: The Rhinedaughters. </td></tr>
+                        <tr><td>276.</td><td> V. Froude, Elizabeth, Vol. I, ch. iv, letter of De Quadra to Philip of Spain:
+                        “In the afternoon we were in a barge, watching the games on the river. (The queen) was alone with Lord Robert and myself on the poop, when they began to talk nonsense, and went so far that Lord Robert at last said, as I was on the spot there was no reason why they should not be married if the queen pleased.” </td></tr>
+                        <tr><td>293.</td><td> Cf. Purgatorio, V. 133:<br>
+                            “Ricorditi di me, che son la Pia;<br>
+                            “Siena mi fe’, disfecemi Maremma.” <br> &nbsp;</td></tr>
+                        <tr><td>307.</td><td> V. St. Augustine’s Confessions: “to Carthage then I came, where a cauldron of unholy loves sang all about mine ears.” </td></tr>
+                        <tr><td>308.</td><td> The complete text of the Buddha’s Fire Sermon (which corresponds in importance to the Sermon on the Mount) from which these words are taken, will be found translated in the late Henry Clarke Warren’s Buddhism in Translation(Harvard Oriental Series). Mr. Warren was one of the great pioneers of Buddhist studies in the occident. </td></tr>
+                        <tr><td>309.</td><td> From St. Augustine’s Confessions again. The collocation of these two representatives of eastern and western asceticism, as the culmination of this part of the poem, is not an accident. </td></tr>
+                    </table>
+                    <p>V. WHAT THE THUNDER SAID </p>
+                     <p>In the first part of Part V three themes are employed: the journey to Emmaus, the approach to the Chapel Perilous (see Miss Weston’s book), and the present decay of eastern Europe. </p>
+                    <table>
+                        <tr><td>357.</td><td> This is Turdus aonalaschkae pallasii, the hermit-thrush which I have heard in Quebec County. Chapman says (Handbook of Birds in Eastern North America) “it is most at home in secluded woodland and thickety retreats.… Its notes are not remarkable for variety or volume, but in purity and sweetness of tone and exquisite modulation they are unequaled.” Its “water-dripping song” is justly celebrated. </td></tr>
+                        <tr><td>360.</td><td> The following lines were stimulated by the account of one of the Antarctic expeditions (I forget which, but I think one of Shackleton’s): it was related that the party of explorers, at the extremity of their strength, had the constant delusion that there was one more member than could actually be counted. </td></tr>
+                        <tr><td>366–76.</td><td> Cf. Hermann Hesse, Blick ins Chaos: “Schon ist halb Europa, schon ist zumindest der halbe Osten Europas auf dem Wege zum Chaos, fährt betrunken im heiligem Wahn am Abgrund entlang und singt dazu, singt betrunken und hymnisch wie Dmitri Karamasoff sang. Ueber diese Lieder lacht der Bürger beleidigt, der Heilige und Seher hört sie mit Tränen.” </td></tr>
+                        <tr><td>401.</td><td> “Datta, dayadhvam, damyata” (Give, sympathise, control). The fable of the meaning of the Thunder is found in the Brihadaranyaka—Upanishad, 5, 1. A translation is found in Deussen’s Sechzig Upanishads des Veda, p. 489. </td></tr>
+                        <tr><td>407.</td><td> Cf. Webster, The White Devil, V, vi:<br><br>
+                                    “…they’ll remarry <br>
+                        Ere the worm pierce your winding-sheet, ere the spider<br>
+                        Make a thin curtain for your epitaphs.” </td></tr>
+                        <tr><td>411.</td><td> Cf. Inferno, XXXIII, 46:<br>
+                        “ed io sentii chiavar l’uscio di sotto<br>
+                        all’orribile torre.”<br><br>
+                          Also F. H. Bradley, Appearance and Reality, p. 346.<br><br>
+                        “My external sensations are no less private to myself than are my thoughts or my feelings. In either case my experience falls within my own circle, a circle closed on the outside; and, with all its elements alike, every sphere is opaque to the others which surround it.… In brief, regarded as an existence which appears in a soul, the whole world for each is peculiar and private to that soul.” <br> &nbsp; </td></tr>
+                        <tr><td>424.</td><td> V. Weston, From Ritual to Romance; chapter on the Fisher King. </td></tr>
+                        <tr><td>427.</td><td> V. Purgatorio, XXVI, 148.<br><br>
+                        “‘Ara vos prec, per aquella valor<br>
+                        ‘que vos guida al som de l’escalina,<br>
+                        ‘sovegna vos a temps de ma dolor.’<br>
+                        Poi s’ascose nel foco che gli affina.” <br> &nbsp;</td></tr>
+                        <tr><td>428.</td><td> V. Pervigilium Veneris. Cf. Philomela in Parts II and III. </td></tr>
+                        <tr><td>429.</td><td> V. Gerard de Nerval, Sonnet El Desdichado. </td></tr>
+                        <tr><td>431.</td><td> V. Kyd’s Spanish Tragedy. </td></tr>
+                        <tr><td>433.</td><td> Shantih. Repeated as here, a formal ending to an Upanishad. “The Peace which passeth understanding” is a feeble translation of the content of this word.</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+
+
+    <div class="footer">
+        <p> &nbsp;</p>
     </div>
  
 

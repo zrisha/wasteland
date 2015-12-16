@@ -23,9 +23,18 @@ body {
     color: black;
 }
 
-.text{
+.text, .credits{
     margin-top: 5%;
+    margin-bottom: 5%;
 }
+
+.text a{
+    text-decoration: none;
+    color: inherit;
+}
+    
+
+
 
 /* Navbar */
 
@@ -38,24 +47,49 @@ body {
     color: white;
 }
 
-ul{
+.navbar ul{
     margin: 0px;
     padding: 10px .5% 10px 3%; 
 }
 
-li{
+.navbar li{
     list-style: none;
     display:inline;
     padding-left: 5%;
 }
 
-a{
+.navbar a{
     text-decoration: none;
     color:inherit;
 }
 
-a:hover{
+.navbar a:hover{
     color:sandybrown; 
+}
+
+/* Navscroll */
+
+.navscroll{
+    background: black;
+    color: white;
+    padding: 10px 10px 5px 10px;
+    width: 75%;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+.navscroll ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+.navscroll li{
+    list-style: none;
+    padding: .3em;
+}
+
+.navscroll a:hover{
+    color:darkcyan;
 }
 
 /* Table */
@@ -69,6 +103,13 @@ table tr td{
     position:sticky
 }
 
+/* Annotations */
+
+.annotation td{
+    vertical-align: top;
+}
+
+
 /* Tooltips */
 
 .tt-foreign, .tt-tristan{
@@ -80,6 +121,13 @@ table tr td{
 .tt-eliot{
     color: rgb(0, 110, 0);
     font-weight: 900;
+}
+
+/*--Header--*/
+
+.footer{
+    background-color: black;
+    height: 150px;
 }
 
 /* Larger than mobile */
@@ -95,8 +143,15 @@ table tr td{
         .line{
         display: none;
         }
+    
 
 }
+
+ @media (max-width: 600px) {       
+        .navscroll{
+        display: none;
+        }
+ }
 
 /* Larger than tablet */
 @media (min-width: 550px) {
